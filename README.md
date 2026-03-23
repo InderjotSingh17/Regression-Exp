@@ -1,48 +1,44 @@
-# 🏡 House Price Prediction (Complete Machine Learning Pipeline)
+# 🏡 House Price Prediction — Complete Machine Learning Journey (Beginner → Advanced)
 
 ## 🚀 Overview
 
-This project implements a **complete end-to-end Machine Learning pipeline** for predicting house prices using regression techniques.
-It covers everything from **data analysis and preprocessing to model building, evaluation, and optimization**.
+This project is a **complete end-to-end Machine Learning journey for regression**, covering concepts from **basic linear models to advanced ensemble techniques like XGBoost**.
 
-The goal of this project is not just prediction, but **deep understanding of how ML models work in real-world scenarios**.
+The focus is not just on prediction, but on **deep understanding of how models learn, improve, and generalize**.
 
 ---
 
 ## 🎯 Objectives
 
-* Understand regression problems deeply
-* Build multiple ML models and compare them
-* Detect and handle overfitting
-* Apply feature engineering and feature selection
+* Build a strong foundation in regression
+* Understand model behavior (bias, variance, overfitting)
+* Learn ensemble techniques (Bagging & Boosting)
+* Apply feature engineering and selection
 * Perform hyperparameter tuning
-* Use cross-validation for reliable evaluation
-* Build clean and reusable ML pipelines
+* Understand how models actually learn (Gradient Descent)
 
 ---
 
 ## 📊 Dataset
 
-* Dataset used: **Boston Housing Dataset**
+* **Boston Housing Dataset**
+* Target: `medv` (Median House Price)
 * Features include:
 
   * Crime rate, number of rooms, tax rate, etc.
-* Target variable:
-
-  * `medv` → Median house price
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+# 🔍 Exploratory Data Analysis (EDA)
 
-* Feature distribution visualization
+* Feature distributions (histograms + KDE)
 * Correlation heatmap
 * Feature vs target relationships
-* Outlier and skewness understanding
+* Outlier and skewness analysis
 
 ---
 
-## ⚙️ Data Preprocessing
+# ⚙️ Data Preprocessing
 
 * Train-Test Split
 * One Hot Encoding (OHE)
@@ -50,107 +46,138 @@ The goal of this project is not just prediction, but **deep understanding of how
 
 ---
 
-## 🧠 Models Implemented
+# 🧠 Models Implemented
 
-### 🔹 Basic Models
+## 🔹 Basic Models
 
 * Linear Regression
 * Polynomial Regression
 
-### 🔹 Regularization
+## 🔹 Regularization
 
 * Ridge Regression
 * Lasso Regression
 
-### 🔹 Tree-Based Models
+## 🔹 Tree-Based Models
 
 * Decision Tree Regressor
-* Random Forest Regressor
 
 ---
 
-## 📈 Model Evaluation
+# 🌲 Ensemble Learning
+
+## 🔹 Bagging
+
+* Concept: Reduce variance using multiple models
+* Implementation: **Random Forest Regressor**
+
+## 🔹 Boosting
+
+* AdaBoost Regressor
+* Gradient Boosting Regressor
+* XGBoost Regressor
+
+---
+
+# 📈 Model Evaluation
 
 * Mean Squared Error (MSE)
 * Root Mean Squared Error (RMSE)
 * R² Score
 * Residual Analysis
-* Train vs Test Comparison (Overfitting detection)
+* Train vs Test comparison (Overfitting detection)
 
 ---
 
-## 🔥 Advanced Techniques
+# 🔥 Advanced Techniques
 
-### 🔹 Feature Engineering
+## 🔹 Feature Engineering
 
-* Polynomial feature generation
+* Polynomial features
+* Manual feature creation
 
-### 🔹 Feature Selection
+## 🔹 Feature Selection
 
 * Lasso-based selection
-* Feature importance (Random Forest)
+* Feature importance using Random Forest
 
-### 🔹 Cross Validation
+## 🔹 Cross Validation
 
 * K-Fold Cross Validation for robust evaluation
 
-### 🔹 Hyperparameter Tuning
+## 🔹 Hyperparameter Tuning
 
-* GridSearchCV for optimal model parameters
+* GridSearchCV for optimal model performance
 
-### 🔹 Pipeline
+## 🔹 Pipeline
 
 * Combined preprocessing + model into a single workflow
 
 ---
 
-## 📊 Results Summary
+# ⚙️ Core ML Concept
 
-| Model                 | Performance                          |
-| --------------------- | ------------------------------------ |
-| Linear Regression     | Baseline                             |
-| Polynomial Regression | Improved accuracy                    |
-| Ridge Regression      | Reduced overfitting                  |
-| Lasso Regression      | Feature reduction (performance drop) |
-| Decision Tree         | Overfitting observed                 |
-| Random Forest         | ✅ Best performance                   |
+## 🔹 Gradient Descent (From Scratch)
+
+* Implemented manually
+* Visualized learning process
+* Understood weight updates and loss minimization
 
 ---
 
-## 🏆 Final Model
+# 📊 Results Summary
 
-👉 **Random Forest Regressor**
+| Model                   | Performance                          |
+| ----------------------- | ------------------------------------ |
+| Linear Regression       | Baseline                             |
+| Polynomial Regression   | Improved performance                 |
+| Ridge Regression        | Reduced overfitting                  |
+| Lasso Regression        | Feature reduction (performance drop) |
+| Decision Tree           | Overfitting observed                 |
+| Random Forest (Bagging) | Strong and stable                    |
+| AdaBoost                | Moderate performance                 |
+| Gradient Boosting       | 🚀 Best performance                  |
+| XGBoost                 | Competitive (needs tuning)           |
+
+---
+
+# 🏆 Final Model
+
+👉 **Gradient Boosting Regressor**
 
 ### Why?
 
 * Lowest error
-* Best generalization
-* Handles non-linearity well
-* Reduces overfitting
+* Highest R² score
+* Learns from residual errors
+* Best balance between bias and variance
 
 ---
 
-## 💡 Key Learnings
+# 💡 Key Learnings
 
-* More complex models can lead to overfitting
-* Feature importance ≠ feature usefulness always
+* No single model is always best
+* Overfitting must be detected using train-test gap
+* Bagging reduces variance, boosting reduces bias
+* Feature importance ≠ true usefulness always
 * Cross-validation gives realistic performance
-* Regularization helps control model complexity
-* Random Forest provides a balance between bias and variance
+* Gradient Descent is the core learning mechanism of ML
+* XGBoost requires tuning and works best on large datasets
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 * Python 🐍
 * NumPy
 * Pandas
 * Matplotlib & Seaborn
 * Scikit-learn
+* XGBoost
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```
 ├── notebook.ipynb
@@ -159,10 +186,10 @@ The goal of this project is not just prediction, but **deep understanding of how
 
 ---
 
-## 🚀 How to Run
+# 🚀 How to Run
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 ```
 
 ```bash
@@ -171,21 +198,22 @@ jupyter notebook
 
 ---
 
-## 🎯 Future Improvements
+# 🔮 Future Improvements
 
-* Try XGBoost / LightGBM
+* Try LightGBM / CatBoost
 * Deploy model using Flask/Django
+* Add SHAP for model explainability
 * Use larger real-world datasets
-* Add model explainability (SHAP)
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Inderjot Singh**
 
 ---
 
-## ⭐ If you like this project
+# ⭐ If you like this project
 
 Give it a ⭐ on GitHub and share your feedback!
+
